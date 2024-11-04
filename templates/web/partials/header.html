@@ -1,0 +1,160 @@
+{% load static %}
+
+	<!--==================================================-->
+	<!-- Start Main Menu Area -->
+	<!--==================================================-->
+	<div id="sticky-header" class="hendre_nav_manu">
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="col-lg-2">
+					<div class="logo">
+						<a class="logo_img" href="{% url 'web:index' %}" title="hendre">
+							<img src="{% static 'web/images/logo.png' %}" alt="logo">
+						</a>
+						<a class="main_sticky" href="{% url 'web:index' %}" title="hendre">
+							<img src="{% static 'web/images/logo.png' %}" alt="logo">
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<nav class="hendre_menu">
+						<ul class="nav_scroll">
+							<li><a href="{% url 'web:index' %}">Home </a>
+								 
+							</li>
+							<li><a href="{% url 'web:about' %}">About </a></li>
+							<li><a href="{% url 'web:project' %}">Projects</a>
+							</li>
+							<li><a href="{% url 'web:products' %}">Products</a>
+					
+							</li>
+							
+							<li><a href="{% url 'web:blog-grid' %}">Blog </a>
+								{% comment %} <ul class="sub-menu">
+									<li><a href="blog-grid.html">Blog Grid</a></li>
+									<li><a href="blog-details.html">Blog Details</a></li>
+								</ul> {% endcomment %}
+							</li>
+							<li><a href="{% url 'web:contact' %}">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-lg-3">
+					<div class="header-src-box">
+						<!-- <div class="header-icon">
+							<div class="search-box-btn search-box-outer">
+								<i class="fas fa-search"></i>
+							</div>
+						</div> -->
+						<div class="header-button">
+							<a href="{% url "web:contact" %}">Get a Quote <i class="bi bi-arrow-right-short"></i></a>
+						</div>
+						<div class="sidebar-btn">
+							<div class="nav-btn navSidebar-button"><span><i class="bi bi-filter-left"></i></span></div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--  Mobile Menu Area -->
+	<div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none ">
+		<div class="mobile-menu">
+			<nav class="hendre_menu">
+				<ul class="nav_scroll">
+					<li><a href="{% url 'web:index' %}">Home </a>
+								 
+							</li>
+					<li><a href="{% url 'web:about' %}">About </a></li>
+					<li><a href="{% url 'web:project' %}">Projects</a>
+						
+					</li>
+					<li><a href="{% url 'web:products' %}">Products</a>
+						
+					</li>
+					<li><a href="{% url 'web:blog-grid' %}">Blog </a>
+							
+					</li>
+					
+					<li><a href="{% url "web:contact" %}">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!--==================================================-->
+	<!-- End  Main Menu Area -->
+	<!--==================================================-->
+
+
+	<!--==================================================-->
+	<!-- Sidebar Cart Item -->
+	<!--==================================================-->
+	
+	<div class="xs-sidebar-group info-group">
+		<div class="xs-overlay xs-bg-black"></div>
+		<div class="xs-sidebar-widget">
+			<div class="sidebar-widget-container">
+				<div class="widget-heading">
+					<a href="#" class="close-side-widget">
+						<i class="far fa-times-circle"></i>
+					</a>
+				</div>
+				<div class="sidebar-textwidget">
+					<!-- Sidebar Info Content -->
+					<div class="sidebar-info-contents">
+						<div class="content-inner">
+							<div class="nav-logo">
+								<a href="{% url 'web:index' %}"><img src="{% static 'web/images/logo.png' %}" alt="sid img" ></a>
+							</div>
+							<div class="row padding-two">
+								<div class="col-lg-6">
+									<div class="content-thumb-box">
+										<img src="{% static 'web/images/resource/insta-4.jpg' %}" alt="">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="content-thumb-box">
+										<img src="{% static 'web/images/resource/insta-5.jpg' %}" alt="">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="content-thumb-box">
+										<img src="{% static 'web/images/resource/insta-2.jpg' %}" alt="">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="content-thumb-box">
+										<img src="{% static 'web/images/resource/insta-1.jpg' %}" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="contact-info">
+								<h2>Contact Info</h2>
+								<ul class="list-style-one">
+									<li><i class="bi bi-envelope"></i>Second Floor, Emarald Mall,
+										Mavoor Road, Calicut</li>
+									<li><i class="bi bi-telephone"></i>+91 9562 888 666</li>
+									<li><i class="bi bi-envelope"></i>info@kpgroupindia.com</li>
+									<li><i class="bi bi-envelope"></i>Week Days: 09.00 to 18.00 Sunday: Closed</li>
+								</ul>
+							</div>
+							<!-- Social Box -->
+							<ul class="social-box">
+								<li class="facebook"><a href="#" class="fab fa-facebook-f"></a></li>
+								<li class="twitter"><a href="#" class="fab fa-instagram"></a></li>
+								<li class="linkedin"><a href="#" class="fab fa-twitter"></a></li>
+								{% comment %} <li class="instagram"><a href="#" class="fab fa-pinterest-p"></a></li> {% endcomment %}
+								<li class="youtube"><a href="#" class="fab fa-linkedin-in"></a></li>
+							</ul>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--==================================================-->
+	<!--End Sidebar Cart Item -->
+	<!--==================================================-->
+

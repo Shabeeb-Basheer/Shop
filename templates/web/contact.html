@@ -1,0 +1,108 @@
+
+{% extends "web/base.html" %}
+{% load static %}
+
+{% block content %}
+
+	<!--==================================================-->
+	<!-- Start breadcumb-area -->
+	<!--==================================================-->
+
+	<div class="breadcumb-area d-flex align-items-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="breadcumb-content">
+						<h1>Contact Us</h1>
+						<ul>
+							<li><a href="index-2.html">Home</a></li>
+							<li>Contact Us </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--==================================================-->
+	<!-- End breadcumb-area -->
+	<!--==================================================-->
+
+
+	<!--==================================================-->
+	<!-- Start contact-area-inner -->
+	<!--==================================================-->
+
+	<div class="contact-area-inner upper">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="single-contact-box upper wow fadeInRight">
+						<div class="section-title upper">
+							<div class="sub-title">
+								<h2>Collaborate with Our <br> Support Team"</h2>
+							</div>
+						</div>
+						<div class="contact_from_box">
+							<form action="#" method="POST" id="dreamit-form" class="ajax redirect" data-redirect="/">
+								{% csrf_token %}
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="form_box">
+											{{form.name}}
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form_box">
+											{{form.phone}}
+										</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="form_box">
+											{{form.message}}
+										</div>
+										<div class="quote_button">
+											<button class="btn" type="submit">SUBMIT NOW</button>
+										</div>
+									</div>
+								</div>
+							</form>
+							<div id="status"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="single-contact-box wow fadeInLeft">
+						<div class="single-contact-thumb">
+							<img src="{% static 'web/images/resource/cont-ri.jpg' %}" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--==================================================-->
+	<!-- End contact-area-inner -->
+	<!--==================================================-->
+
+
+
+	<!--==================================================-->
+	<!-- Start map Location  -->
+	<!--===================================================-->
+	<div class="map-section">
+		<div class="container">
+			<div class="row mg-pt">
+				<div class="col-lg-12 p-0">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d501154.4835834736!2d75.8318629625129!3d11.09328815087149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1skpg%20roofings!5e0!3m2!1sen!2sin!4v1619504243353!5m2!1sen!2sin" width="100%" zoom="1" height="524.1" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--==================================================-->
+	<!-- Start map Location -->
+	<!--===================================================-->
+
+{% endblock %}

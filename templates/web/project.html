@@ -1,0 +1,54 @@
+
+{% extends "web/base.html" %}
+{% load static %}
+
+{% block content %}
+	<!--==================================================-->
+	<!-- Start portfolio-minimal-area -->
+	<!--==================================================-->
+
+	<div class="portfolio-minimal-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="minimal-title">
+						<h1>A Glimpse into Our Latest <br>Bureau Ventures"</h1>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row image_load">
+				{% for project in projects  %}
+				
+				
+				<div class="col-lg-4 col-md-6 grid-item physics english">
+					<div class="case-study-single-box wow fadeInUp">
+						<div class="case-study-thumb2">
+							<img src="{{project.image.url}}" alt="">
+						</div>
+						<div class="case-study-contents">
+							<div class="case-text">
+								<div class="case-title style2">
+									<span><a href="{{project.get_absolute_url}}">{{project.name}}</a></span>
+								</div>
+								<div class="case-study-title style2">
+									<h3> <a href="{{project.get_absolute_url}}"> {{project.category}}</a></h3>
+								</div>
+								<div class="case-study-icon">
+									<i class="bi bi-arrow-right"></i>
+								</div>
+							</div>							
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	
+	<!--==================================================-->
+	<!-- End portfolio-minimal-area -->
+	<!--==================================================-->
+
+
+{% endblock %}
